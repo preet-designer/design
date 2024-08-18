@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flower</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* background: white; */
+        background: #000;
+        height: 100vh;
+      }
+
+      .lotus {
+        transform: rotate(45deg);
+        transform-origin: right bottom;
+      }
+
+      .leaf {
+        background: #f51ea2;
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        margin: -50px;
+        border-radius: 10px 150px 0px 150px;
+        transform-origin: right bottom;
+        transition: 2s;
+        box-shadow: inset 3px 3px 8px hsl(323, 95%, 23%),
+          inset 0px 0px 3px hsl(323, 91%, 31%),
+          inset -3px -3px 8px hsla(125, 93%, 27%, 0.877);
+        animation: rotate 5s linear infinite alternate;
+      }
+      @keyframes rotate {
+        0% {
+          transform: rotate(0);
+        }
+        100% {
+          transform: rotate(var(--rot));
+        }
+      }
+      /* 
+      .lotus:hover > .leaf {
+        transform: rotate(var(--rot));
+        transition: 1.5s;
+      } */
+    </style>
+  </head>
+
+  <body>
+    <div class="lotus">
+      <div class="leaf" style="--rot: 0deg"></div>
+      <div class="leaf" style="--rot: 22deg"></div>
+      <div class="leaf" style="--rot: -22deg"></div>
+      <div class="leaf" style="--rot: 44deg"></div>
+      <div class="leaf" style="--rot: -44deg"></div>
+      <div class="leaf" style="--rot: 66deg"></div>
+      <div class="leaf" style="--rot: -66deg"></div>
+      <div class="leaf" style="--rot: 88deg"></div>
+      <div class="leaf" style="--rot: -88deg"></div>
+      <div class="leaf" style="--rot: 110deg"></div>
+      <div class="leaf" style="--rot: -110deg"></div>
+      <div class="leaf" style="--rot: 132deg"></div>
+      <div class="leaf" style="--rot: -132deg"></div>
+      <div class="leaf" style="--rot: 154deg"></div>
+      <div class="leaf" style="--rot: -154deg"></div>
+      <div class="leaf" style="--rot: 180deg"></div>
+      <div class="leaf" style="--rot: -180deg"></div>
+    </div>
+  </body>
+</html>
+
+</body>
+</html>
